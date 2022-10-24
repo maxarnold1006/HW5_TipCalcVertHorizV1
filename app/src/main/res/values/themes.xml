@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.HW5_TipCalcVertHoriz" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="TextStyle" parent="@android:style/TextAppearance">
+        <item name = "android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:textSize">28sp</item>
+        <item name = "android:padding">10dp</item>
+    </style>
+
+    <style name="LabelStyle" parent="TextStyle">
+        <item name = "background">@color/lightGray</item>
+    </style>
+
+    <style name="CenteredTextStyle" parent="TextStyle">
+        <item name = "android:gravity">center</item>
+    </style>
+
+    <style name="InputStyle" parent="CenteredTextStyle">
+        <item name = "android:textColor">@color/darkBlue</item>
+    </style>
+
+    <style name="OutputStyle" parent="CenteredTextStyle">
+        <item name = "background">@color/lightGreen</item>
+    </style>
+
+</resources>
+

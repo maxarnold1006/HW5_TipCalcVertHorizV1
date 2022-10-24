@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.missouristate.arnold.hw5_tipcalcverthoriz.MainActivity">
+
+
+        <EditText
+            android:id="@+id/amount_guests"
+            style="@style/InputStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/guests_hint"
+            android:inputType="number"
+            android:textColor="@color/darkBlue"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/label_guests"
+            app:layout_constraintTop_toBottomOf="@+id/amount_tip_percent"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="398"
+
+            />
+
+        <TextView
+            android:id="@+id/guests_tip_split"
+            style="@style/OutputStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGreen"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/label_guests_tip_total"
+            app:layout_constraintTop_toBottomOf="@+id/amount_total"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="52" />
+
+        <TextView
+            android:id="@+id/label_guests_tip_total"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGray"
+            android:minWidth="120dp"
+            android:text="@string/label_total_split_tip"
+            android:textSize="15sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/label_bill"
+            app:layout_constraintRight_toRightOf="@+id/label_bill"
+            app:layout_constraintTop_toBottomOf="@id/label_total"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="222" />
+
+        <View
+            android:id="@+id/red_line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="60dp"
+            android:background="#FF00"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintLeft_toLeftOf="@id/label_bill"
+            app:layout_constraintRight_toRightOf="@id/amount_bill"
+            app:layout_constraintTop_toBottomOf="@+id/label_tip_percent"
+            tools:layout_conversion_wrapHeight="13"
+
+            tools:layout_conversion_wrapWidth="1080" />
+
+        <TextView
+            android:id="@+id/label_guests_total"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGray"
+            android:minWidth="120dp"
+            android:text="@string/label_total_split"
+            android:textSize="15sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/label_bill"
+            app:layout_constraintRight_toRightOf="@+id/label_bill"
+            app:layout_constraintTop_toBottomOf="@+id/label_guests_tip_total"
+            tools:layout_conversion_wrapHeight="152"
+
+            tools:layout_conversion_wrapWidth="222" />
+
+        <TextView
+            android:id="@+id/label_total"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGray"
+            android:minWidth="120dp"
+            android:text="@string/label_total"
+            android:textSize="15sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/label_bill"
+            app:layout_constraintRight_toRightOf="@+id/label_bill"
+            app:layout_constraintTop_toBottomOf="@id/label_tip"
+            tools:layout_conversion_wrapHeight="152"
+
+            tools:layout_conversion_wrapWidth="222" />
+
+        <TextView
+            android:id="@+id/amount_total"
+            style="@style/OutputStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGreen"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/label_total"
+            app:layout_constraintTop_toBottomOf="@+id/amount_tip"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="52" />
+
+        <TextView
+            android:id="@+id/label_tip"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightGray"
+            android:minWidth="120dp"
+            android:text="@string/label_tip"
+            android:textSize="15sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/label_bill"
+            app:layout_constraintRight_toRightOf="@+id/label_bill"
+            app:layout_constraintTop_toBottomOf="@id/red_line"
+            tools:layout_conversion_wrapHeight="152"
+
+            tools:layout_conversion_wrapWidth="267" />
+
+        <TextView
+            android:id="@+id/guests_total_split"
+            style="@style/OutputStyle"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/lightGreen"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/label_guests_total"
+            app:layout_constraintTop_toBottomOf="@+id/guests_tip_split"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="52" />
+
+        <TextView
+            android:id="@+id/amount_tip"
+            style="@style/OutputStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightGreen"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/label_tip"
+            app:layout_constraintTop_toBottomOf="@+id/red_line"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="52"
+
+            />
+
+        <EditText
+            android:id="@+id/amount_tip_percent"
+            style="@style/InputStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/amount_tip_percent_hint"
+            android:inputType="number"
+            android:textColor="@color/darkBlue"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/label_tip_percent"
+            app:layout_constraintTop_toBottomOf="@+id/amount_bill"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="398" />
+
+        <TextView
+            android:id="@+id/label_bill"
+            style="@style/LabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGray"
+            android:minWidth="120dp"
+            android:text="@string/label_bill"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="315" />
+
+        <TextView
+            android:id="@+id/label_tip_percent"
+            style="@style/LabelStyle"
+            android:layout_width="119dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/label_bill"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGray"
+            android:text="@string/label_tip_percent"
+            android:textSize="15sp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@+id/label_bill"
+            app:layout_constraintRight_toRightOf="@+id/label_bill"
+            app:layout_constraintTop_toBottomOf="@+id/label_bill"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="279" />
+
+        <TextView
+            android:id="@+id/label_guests"
+            style="@style/LabelStyle"
+            android:layout_width="119dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/label_tip_percent"
+            android:layout_marginTop="15dp"
+            android:background="@color/lightGray"
+            android:text="@string/label_guests"
+            android:textSize="15sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/label_tip_percent"
+            app:layout_constraintRight_toRightOf="@+id/label_tip_percent"
+            app:layout_constraintTop_toBottomOf="@+id/label_tip_percent"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="279" />
+
+        <EditText
+            android:id="@+id/amount_bill"
+            style="@style/InputStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/amount_bill_hint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/darkBlue"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/label_bill"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_wrapHeight="152"
+            tools:layout_conversion_wrapWidth="337" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
